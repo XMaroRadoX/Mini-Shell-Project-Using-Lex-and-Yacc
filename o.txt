@@ -1,0 +1,3 @@
+-rwxrwxrwx 1 marwan marwan 137648 Nov  5 19:13 shell
+-rwxrwxrwx 1 marwan marwan    604 Nov  5 19:10 shell.l
+-rwxrwxrwx 1 marwan marwan   2892 Nov  4 18:27 shell.y
