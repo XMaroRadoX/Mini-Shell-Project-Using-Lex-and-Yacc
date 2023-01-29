@@ -1,11 +1,4 @@
 
-/*
- *
- * CS-413 Spring 98
- * shell.l: lexical analyzer for shell
- * You have to extend it.
- *
- */
 
 %{
 

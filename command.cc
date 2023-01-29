@@ -1,13 +1,3 @@
-/*
- * CS354: Shell project
- *
- * Template file.
- * You will need to add more code here to execute the command table.
- *
- * NOTE: You are responsible for fixing any bugs this code may have!
- *
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -22,9 +12,9 @@
 #include <bits/stdc++.h>
 #include <ctime>
 #include <string>
-
 #include "command.h"
 using namespace std;
+
 void childTerminated()
 {
 	FILE *logFile = fopen("Log.txt", "a");
@@ -90,6 +80,8 @@ void Command::insertSimpleCommand(SimpleCommand *simpleCommand)
 
 void Command::clear()
 {
+	//free dynamically allocated memory for all variables
+	//if the variable was ever used
 	for (int i = 0; i < _numberOfSimpleCommands; i++)
 	{
 		for (int j = 0; j < _simpleCommands[i]->_numberOfArguments; j++)
@@ -116,6 +108,7 @@ void Command::clear()
 		free(_errFile);
 	}
 
+	//reset all variables
 	_numberOfSimpleCommands = 0;
 	_outFile = 0;
 	_inputFile = 0;
